@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+
+    * {
+        @apply font-['Vazirmatn_FD']
+    }
+
+    body {
+        @apply bg-white text-zinc-900;
+        direction: rtl;
+    }
+
+
+    .navbar {
+        @apply bg-zinc-100 fixed w-full h-16 md:h-16 py-2 px-5 flex flex-row border border-b border-zinc-300 border-opacity-75 z-10;
+    }
+
+    .brand {
+        @apply w-1/2 md:w-1/5 px-2 md:px-5 py-3 md:py-2;
+    }
+
+    .brand h1 {
+        @apply text-lg font-bold md:text-xl;
+    }
+
+    .navbar .left-section {
+        @apply inline-flex flex-row justify-end w-1/2 md:w-4/5 text-left py-1;
+    }
+
+    .dropdown {
+        @apply inline-flex relative;
+    }
+
+    .dropdown .mobile {
+        @apply sm:hidden block;
+    }
+
+    .dropdown .desktop {
+        @apply sm:block hidden;
+    }
+
+    .dropdown .dropdown-btn {
+        @apply inline-flex flex-row items-center bg-zinc-500 text-white px-3 py-0 md:py-1 rounded-sm text-sm w-fit text-left hover:bg-zinc-600 transition-all;
+    }
+
+    .down-caret {
+        @apply text-[9px] pr-1 md:pr-1;
+    }
+
+    .dropdown .dropdown-menu {
+        @apply bg-white py-3 w-full mt-2 absolute top-full left-0 hidden border border-zinc-300 rounded-md z-20;
+    }
+
+    .dropdown .mobile .dropdown-menu {
+        @apply w-[60vw];
+    }
+
+
+    .dropdown .dropdown-menu a {
+        @apply flex flex-col justify-start text-right w-full py-2 px-5 hover:bg-zinc-100 transition-all;
+    }
+
+    .navbar .notification {
+        @apply hidden md:flex items-center justify-center rounded-full bg-zinc-600 text-white mx-3 w-9 h-9 pt-1;
+    }
+
+    .sidebar {
+        @apply w-1/6 flex flex-col fixed h-[100vh] top-16 bg-zinc-100 right-0 border-l border-zinc-300 border-opacity-75 py-4 z-10;
+    }
+
+    .sidebar .mobile {
+        @apply sm:hidden block;
+    }
+
+    .sidebar .desktop {
+        @apply sm:block hidden;
+    }
+
+    .sidebar .item {
+        @apply w-full md:w-fit pr-1 md:pr-4 pl-2 py-2 my-1 inline-flex flex-row justify-center md:justify-start items-center text-left md:text-right text-lg hover:text-blue-500 transition-all;
+    }
+
+    .sidebar .item span,
+    .sidebar .item i {
+        @apply mx-1 md:mx-2;
+    }
+
+    .active {
+        @apply text-blue-500;
+    }
+
+    .main-section {
+        @apply w-full flex flex-row relative top-16;
+    }
+
+    .sidebar-space {
+        @apply w-1/6;
+    }
+
+    .content {
+        @apply w-5/6 flex flex-col p-5 relative;
+    }
+
+    .breadcrumb {
+        @apply w-full bg-zinc-200 px-5 py-4 text-sm rounded-md;
+    }
+
+    .breadcrumb li {
+        @apply inline;
+    }
+
+    .welcome-section {
+        @apply w-full px-2 md:px-5 py-3 text-sm;
+    }
+
+    .welcome-section h3 {
+        @apply text-lg py-1;
+    }
+
+    .table-responsive {
+        @apply overflow-x-scroll;
+    }
+
+    .table-striped tbody tr:nth-child(even) {
+        @apply bg-zinc-200;
+    }
+
+    .table-hover tbody tr {
+        @apply hover:bg-blue-200 transition-all;
+    }
+
+
+    .content-table {
+        @apply w-full bg-zinc-100 my-4;
+    }
+
+    .content-table thead tr {
+        @apply bg-zinc-300;
+    }
+
+    .content-table tbody td {
+        @apply px-1 py-1 md:px-3 md:py-2 text-center text-sm w-60 md:w-16;
+    }
+
+    .content-table thead .table-head {
+        @apply px-1 py-1 md:px-3 md:py-2 text-center text-sm w-60 md:w-16;
+    }
+
+    .content-table .td-title {
+        @apply font-bold;
+    }
+
+    .btn {
+        @apply px-3 py-2 md:px-4 md:py-2 rounded-sm;
+    }
+
+    .btn-edit {
+        @apply bg-blue-600 hover:bg-blue-700 transition-all text-white inline-block my-1 ml-1;
+    }
+
+    .btn-remove {
+        @apply bg-rose-500 hover:bg-rose-600 transition-all text-white inline-block my-1 ml-1;
+    }
+
+    .form-title {
+        @apply text-xl px-3 my-4;
+    }
+
+    .form {
+        @apply w-11/12 flex flex-col mx-auto my-2;
+    }
+
+    .form-field {
+        @apply w-full md:w-1/2 bg-slate-100 rounded-md px-2 py-2 border border-zinc-400 border-opacity-75 mt-2 mb-4;
+    }
+
+    .btn-success {
+        @apply bg-green-600 hover:bg-green-700 transition-all text-white inline-block w-fit;
+    }
+
+    .buttons-section {
+        @apply w-full flex flex-row pt-3 px-3;
+    }
+
+    .buttons-section a {
+        @apply inline-flex flex-row items-center justify-center;
+    }
+
+    .buttons-section a span,
+    .buttons-section a i {
+        @apply mx-0.5;
+    }
+
+    .buttons-section a i {
+        @apply mt-1;
+    }
+
+    .img-thumbnail {
+        @apply w-14 h-10 border border-zinc-400 border-opacity-50 rounded-sm;
+    }
+}

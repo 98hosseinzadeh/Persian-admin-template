@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/all.css">
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="brand">
+            <h1>پنل مدیریت</h1>
+        </div>
+        <div class="left-section">
+            <div class="notification">
+                <i class="bi bi-bell"></i>
+            </div>
+            <div class="dropdown">
+
+                <button class="dropdown-btn">
+                    <div class="desktop">
+                        <span>Hamidreza Hosseinzadeh</span>
+                        <span class="down-caret">&#9660;</span>
+                    </div>
+                    <div class="mobile">
+                        <i class="bi bi-list"></i>
+                    </div>
+                </button>
+
+                <div class="desktop">
+                    <div class="dropdown-menu">
+                        <a href="#">منوی 1</a>
+                        <a href="#">منوی 2</a>
+                        <a href="#">منوی 3</a>
+                    </div>
+                </div>
+                <div class="mobile">
+                    <div class="dropdown-menu">
+                        <a href="#">منوی 1</a>
+                        <a href="#">منوی 2</a>
+                        <a href="#">منوی 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <div class="desktop">
+            <a href="../dashboard/index.html" class="item active">
+                <i class="bi bi-grid-1x2"></i>
+                <span>داشبورد</span>
+            </a>
+            <a href="./index.html" class="item">
+                <i class="bi bi-journal-richtext"></i>
+                <span>نوشته ها</span>
+            </a>
+            <a href="../categories/index.html" class="item">
+                <i class="bi bi-ui-radios"></i>
+                <span>دسته بندی ها</span>
+            </a>
+            <a href="#" class="item">
+                <i class="bi bi-chat-left-dots"></i>
+                <span>نظرات</span>
+            </a>
+            <a href="#" class="item">
+                <i class="bi bi-list-ul"></i>
+                <span>منو ها</span>
+            </a>
+            <a href="#" class="item">
+                <i class="bi bi-megaphone"></i>
+                <span>بنر های تبلیغاتی</span>
+            </a>
+            <a href="#" class="item">
+                <i class="bi bi-person"></i>
+                <span>کاربران</span>
+            </a>
+            <a href="#" class="item">
+                <i class="bi bi-gear"></i>
+                <span>تنظیمات</span>
+            </a>
+        </div>
+        <div class="mobile">
+            <a href="../dashboard/index.html" class="item active">
+                <i class="bi bi-grid-1x2"></i>
+            </a>
+            <a href="./index.html" class="item">
+                <i class="bi bi-journal-richtext"></i>
+            </a>
+            <a href="../categories/index.html" class="item">
+                <i class="bi bi-ui-radios"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="bi bi-chat-left-dots"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="bi bi-list-ul"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="bi bi-megaphone"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="bi bi-person"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="bi bi-gear"></i>
+            </a>
+        </div>
+    </aside>
+    <section class="main-section">
+        <div class="sidebar-space"></div>
+        <div class="content">
+            <nav class="breadcrumb">
+                <ol>
+                    <li>
+                        <a href="../dashboard/index.html" class="active">داشبورد</a>
+                        <span>/</span>
+                    </li>
+                    <li>
+                        <a href="./index.html" class="active">نوشته ها</a>
+                        <span>/</span>
+                    </li>
+                </ol>
+            </nav>
+            <div class="buttons-section">
+                <a href="./create.html" class="btn btn-success">
+                    <i class="bi bi-plus-lg"></i>
+                    <span>افزودن</span>
+                </a>
+            </div>
+            <div class="table-responsive">
+                <table class="content-table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th class="table-head">#</th>
+                            <th class="table-head">عنوان</th>
+                            <th class="table-head">چکیده</th>
+                            <th class="table-head">بازدید</th>
+                            <th class="table-head">وضعیت</th>
+                            <th class="table-head">نویسنده</th>
+                            <th class="table-head">دسته بندی</th>
+                            <th class="table-head">تصویر</th>
+                            <th class="table-head">تاریخ ایجاد</th>
+                            <th class="table-head">آخرین بروزرسانی</th>
+                            <th class="table-head">عملیات</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="td-title">نوشته 1</td>
+                            <td>خلاصه نوشته خلاصه نوشته خلاصه نوشته خلاصه نوشته</td>
+                            <td>12</td>
+                            <td>نمایش</td>
+                            <td>hamidreza</td>
+                            <td>خبری</td>
+                            <td>
+                                <img src="../../images/1.png" alt="1" class="img-thumbnail">
+                            </td>
+                            <td>1403/04/12</td>
+                            <td>---</td>
+                            <td>
+                                <a href="../posts/edit.html" class="btn btn-edit">ویرایش</a>
+                                <a href="#" class="btn btn-remove">حذف</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="td-title">نوشته 1</td>
+                            <td>خلاصه نوشته خلاصه نوشته خلاصه نوشته خلاصه نوشته</td>
+                            <td>12</td>
+                            <td>نمایش</td>
+                            <td>hamidreza</td>
+                            <td>خبری</td>
+                            <td>
+                                <img src="../../images/1.png" alt="1" class="img-thumbnail">
+                            </td>
+                            <td>1403/04/12</td>
+                            <td>---</td>
+                            <td>
+                                <a href="../posts/edit.html" class="btn btn-edit">ویرایش</a>
+                                <a href="#" class="btn btn-remove">حذف</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="td-title">نوشته 1</td>
+                            <td>خلاصه نوشته خلاصه نوشته خلاصه نوشته خلاصه نوشته</td>
+                            <td>12</td>
+                            <td>نمایش</td>
+                            <td>hamidreza</td>
+                            <td>خبری</td>
+                            <td>
+                                <img src="../../images/1.png" alt="1" class="img-thumbnail">
+                            </td>
+                            <td>1403/04/12</td>
+                            <td>---</td>
+                            <td>
+                                <a href="../posts/edit.html" class="btn btn-edit">ویرایش</a>
+                                <a href="#" class="btn btn-remove">حذف</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>
